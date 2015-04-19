@@ -1,0 +1,1160 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="PA1_template_files/filelist.xml">
+<link rel=Edit-Time-Data href="PA1_template_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Reproducible Research: Peer Assessment 1</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>sid</o:Author>
+  <o:LastAuthor>dell</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>7</o:TotalTime>
+  <o:Created>2015-04-19T20:54:00Z</o:Created>
+  <o:LastSaved>2015-04-19T20:54:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>167</o:Words>
+  <o:Characters>958</o:Characters>
+  <o:Company>Microsoft</o:Company>
+  <o:Lines>7</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1123</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="PA1_template_files/themedata.thmx">
+<link rel=colorSchemeMapping href="PA1_template_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-IN</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef m:val="off"/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapRight/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="subSup"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073741899 0 0 159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610611985 1073750091 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:9.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:18.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	mso-font-kerning:0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+h4
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+h5
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:9.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text Char";
+	margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.Compact, li.Compact, div.Compact
+	{mso-style-name:Compact;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:1.8pt;
+	margin-right:0cm;
+	margin-bottom:1.8pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.Authors, li.Authors, div.Authors
+	{mso-style-name:Authors;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.BlockQuote, li.BlockQuote, div.BlockQuote
+	{mso-style-name:"Block Quote";
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-font-weight:bold;}
+p.DefinitionTerm, li.DefinitionTerm, div.DefinitionTerm
+	{mso-style-name:"Definition Term";
+	mso-style-unhide:no;
+	mso-style-next:Definition;
+	margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Definition, li.Definition, div.Definition
+	{mso-style-name:Definition;
+	mso-style-unhide:no;
+	margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:9.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+p.TableCaption, li.TableCaption, div.TableCaption
+	{mso-style-name:"Table Caption";
+	mso-style-unhide:no;
+	mso-style-link:"Body Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.ImageCaption, li.ImageCaption, div.ImageCaption
+	{mso-style-name:"Image Caption";
+	mso-style-unhide:no;
+	mso-style-link:"Body Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Image Caption";}
+span.VerbatimChar
+	{mso-style-name:"Verbatim Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"Body Text Char";
+	mso-style-link:"Source Code";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;}
+span.FootnoteRef
+	{mso-style-name:"Footnote Ref";
+	mso-style-unhide:no;
+	mso-style-parent:"Body Text Char";
+	vertical-align:super;}
+span.Link
+	{mso-style-name:Link;
+	mso-style-unhide:no;
+	mso-style-parent:"Body Text Char";
+	color:#4F81BD;
+	mso-themecolor:accent1;}
+p.SourceCode, li.SourceCode, div.SourceCode
+	{mso-style-name:"Source Code";
+	mso-style-unhide:no;
+	mso-style-link:"Verbatim Char";
+	margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:9.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#F8F8F8;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+span.KeywordTok
+	{mso-style-name:KeywordTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#204A87;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.DataTypeTok
+	{mso-style-name:DataTypeTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#204A87;
+	background:#F8F8F8;}
+span.DecValTok
+	{mso-style-name:DecValTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#0000CF;
+	background:#F8F8F8;}
+span.BaseNTok
+	{mso-style-name:BaseNTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#0000CF;
+	background:#F8F8F8;}
+span.FloatTok
+	{mso-style-name:FloatTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#0000CF;
+	background:#F8F8F8;}
+span.CharTok
+	{mso-style-name:CharTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#4E9A06;
+	background:#F8F8F8;}
+span.StringTok
+	{mso-style-name:StringTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#4E9A06;
+	background:#F8F8F8;}
+span.CommentTok
+	{mso-style-name:CommentTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.OtherTok
+	{mso-style-name:OtherTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;}
+span.AlertTok
+	{mso-style-name:AlertTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#EF2929;
+	background:#F8F8F8;}
+span.FunctionTok
+	{mso-style-name:FunctionTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:black;
+	background:#F8F8F8;}
+span.RegionMarkerTok
+	{mso-style-name:RegionMarkerTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;}
+span.ErrorTok
+	{mso-style-name:ErrorTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.NormalTok
+	{mso-style-name:NormalTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:12.0pt;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-306163016;
+	mso-list-template-ids:851086556;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:0cm;
+	mso-level-number-position:left;
+	margin-left:24.0pt;
+	text-indent:-24.0pt;}
+@list l0:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-24.0pt;}
+@list l0:level3
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:96.0pt;
+	text-indent:-24.0pt;}
+@list l0:level4
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	margin-left:132.0pt;
+	text-indent:-24.0pt;}
+@list l0:level5
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-24.0pt;}
+@list l0:level6
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	margin-left:204.0pt;
+	text-indent:-24.0pt;}
+@list l0:level7
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	margin-left:240.0pt;
+	text-indent:-24.0pt;}
+@list l0:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l0:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-IN style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle><span lang=EN-US>Reproducible Research: Peer Assessment 1</span></p>
+
+<h2><a name=loading-and-preprocessing-the-data><span lang=EN-US>Loading and
+preprocessing the data</span></a></h2>
+
+<span style='mso-bookmark:loading-and-preprocessing-the-data'></span>
+
+<p class=SourceCode><span class=KeywordTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>library</span></span><span class=NormalTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(dplyr)</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>## Warning: package 'dplyr' was built under R
+version 3.1.2</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>## </span></span><span lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>## Attaching package: 'dplyr'</span></span><span
+lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>## </span></span><span lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>## The following object is masked from
+'package:stats':</span></span><span lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>## </span></span><span lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>##<span style='mso-spacerun:yes'>     </span>filter</span></span><span
+lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>## </span></span><span lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>## The following objects are masked from
+'package:base':</span></span><span lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>## </span></span><span lang=EN-US><br>
+</span><span class=VerbatimChar><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>##<span style='mso-spacerun:yes'>    
+</span>intersect, setdiff, setequal, union</span></span></p>
+
+<p class=SourceCode><span class=NormalTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>activity &lt;-</span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'> </span></span><span class=KeywordTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>read.table</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>(</span></span><span class=DataTypeTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>file =</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'> </span></span><span class=StringTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>&quot;activity.csv&quot;</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>, </span></span><span class=DataTypeTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>header =</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=OtherTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>TRUE</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>,</span></span><span
+class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>stringsAsFactors =</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=OtherTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>TRUE</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>,</span></span><span
+class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>sep =</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>','</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> )<span
+style='mso-spacerun:yes'>  </span></span></span><span class=CommentTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'># loading the
+data</span></span><span lang=EN-US><br>
+</span><span class=NormalTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>act_df &lt;-</span></span><span class=StringTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=KeywordTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>tbl_df</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(activity)<span
+style='mso-spacerun:yes'>    </span></span></span><span class=CommentTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'># preprocessing
+the data</span></span></p>
+
+<h2><a name=what-is-mean-total-number-of-steps-taken><span lang=EN-US>What is
+mean total number of steps taken per day?</span></a></h2>
+
+<span style='mso-bookmark:what-is-mean-total-number-of-steps-taken'></span>
+
+<p class=SourceCode><span class=NormalTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>grp_df &lt;-</span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'> </span></span><span class=KeywordTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>group_by</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>(act_df, date)</span></span><span lang=EN-US><br>
+</span><span class=NormalTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>grp_df &lt;-</span></span><span class=StringTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=KeywordTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>summarise</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(grp_df, </span></span><span
+class=KeywordTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>sum</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(steps, </span></span><span
+class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>na.rm =</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=OtherTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>TRUE</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>))</span></span><span
+lang=EN-US><br>
+</span><span class=KeywordTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>names</span></span><span class=NormalTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(grp_df)[</span></span><span
+class=DecValTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>2</span></span><span class=NormalTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>] &lt;-</span></span><span class=StringTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>
+&quot;total_steps&quot;</span></span><span lang=EN-US><br>
+</span><span class=NormalTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>steps_mean &lt;-</span></span><span class=StringTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=KeywordTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>mean</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(grp_df$total_steps)</span></span><span
+lang=EN-US><br>
+</span><span class=NormalTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>steps_median &lt;-</span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'> </span></span><span class=KeywordTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>median</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>(grp_df$total_steps)</span></span><span lang=EN-US><br>
+<br>
+</span><span class=NormalTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>steps_mean</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>## [1] 9354.23</span></span></p>
+
+<p class=SourceCode><span class=NormalTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>steps_median</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>## [1] 10395</span></span></p>
+
+<p class=SourceCode><span class=KeywordTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>hist</span></span><span class=NormalTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(grp_df$total_steps,
+</span></span><span class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>xlab =</span></span><span class=NormalTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>&quot;Total number of steps in a day&quot;</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>, </span></span><span class=DataTypeTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>ylab =</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'> </span></span><span class=StringTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>&quot;Number of days&quot;</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>, </span></span><span class=DataTypeTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>col =</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'> </span></span><span class=StringTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>&quot;green&quot;</span></span><span
+class=NormalTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>)</span></span><span lang=EN-US><br>
+</span><span class=KeywordTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>abline</span></span><span class=NormalTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(</span></span><span
+class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>v =</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> steps_median, </span></span><span
+class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>col =</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>&quot;red&quot;</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>)</span></span><span
+lang=EN-US><br>
+</span><span class=KeywordTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>abline</span></span><span class=NormalTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(</span></span><span
+class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>v =</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> steps_mean, </span></span><span
+class=DataTypeTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>col =</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>&quot;blue&quot;</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>)</span></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-IN;mso-fareast-language:
+EN-IN;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:363pt;height:291pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="PA1_template_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=484 height=388
+src="PA1_template_files/image001.png" v:shapes="Picture"><![endif]></span></p>
+
+<h2><a name=imputing-missing-values><span lang=EN-US>Imputing missing values</span></a></h2>
+
+<span style='mso-bookmark:imputing-missing-values'></span>
+
+<p class=SourceCode><span class=NormalTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>a &lt;-</span></span><span class=StringTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=KeywordTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>is.na</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(activity$steps)==</span></span><span
+class=StringTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'> </span></span><span class=OtherTok><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>TRUE</span></span><span lang=EN-US><br>
+</span><span class=NormalTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>m_val &lt;-</span></span><span class=StringTok><span
+lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:12.0pt'> </span></span><span
+class=KeywordTok><span lang=EN-US style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt'>sum</span></span><span class=NormalTok><span lang=EN-US
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>(a)</span></span><span
+lang=EN-US><br>
+<br>
+</span><span class=NormalTok><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt'>m_val</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span lang=EN-US style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt'>## [1] 2304</span></span></p>
+
+</div>
+
+</body>
+
+</html>
