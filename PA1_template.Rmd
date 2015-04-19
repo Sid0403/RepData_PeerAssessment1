@@ -9,9 +9,12 @@ output:
 ## Loading and preprocessing the data
 
 ```{r, echo=TRUE}
-activity <- read.csv(file = "activity.csv", header =  TRUE)  # loading the data
+library(dplyr)
+activity <- read.table(file = "activity.csv", header =  TRUE,stringsAsFactors = TRUE,sep = ',' )  # loading the data
+act_df <- tbl_df(activity)    # preprocessing the data
 
 ```
+
 
 
 
