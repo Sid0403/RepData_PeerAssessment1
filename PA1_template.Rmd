@@ -37,14 +37,11 @@ abline(v = steps_mean, col = "blue")
 
 ```
 
-
-
-## What is the average daily activity pattern?
-
-
-
 ## Imputing missing values
+```{r}
+a <- is.na(activity$steps)== TRUE
+m_val <- sum(a)
 
+m_val
 
-
-## Are there differences in activity patterns between weekdays and weekends?
+```
