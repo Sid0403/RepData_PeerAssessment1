@@ -16,6 +16,23 @@ activity <- read.csv(file = "activity.csv", header =  TRUE)  # loading the data
 
 
 ## What is mean total number of steps taken per day?
+```{r, echo=TRUE}
+grp_df <- group_by(act_df, date)
+grp_df <- summarise(grp_df, sum(steps, na.rm = TRUE))
+names(grp_df)[2] <- "total_steps"
+steps_mean <- mean(grp_df$total_steps)
+steps_median <- median(grp_df$total_steps)
+
+steps_mean
+steps_median
+
+```
+```{r, echo=TRUE}
+hist(grp_df$total_steps, xlab = "Total number of steps in a day", ylab = "Number of days", col = "green")
+abline(v = steps_median, col = "red")
+abline(v = steps_mean, col = "blue")
+
+```
 
 
 
